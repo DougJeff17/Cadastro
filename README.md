@@ -1,1 +1,1 @@
-<h1>Formulario de cadastro</h1>
+<h1>Formulario de cadastro responsivo</h1>
