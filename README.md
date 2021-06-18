@@ -1,3 +1,1 @@
-<h1>Pagina de cadastro do Facebook</h1>
-
-Apenas para treinar os conhecimentos do curso!
+<h1>Formulario de cadastro</h1>
