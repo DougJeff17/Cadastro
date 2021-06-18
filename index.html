@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6508d9d9bd.js" crossorigin="anonymous"></script>
-    <title>Login</title>
+    <title>Tela de Cadastro</title>
 </head>
 <body>
 
     
         <div class="container">
-            <form id="formulario" action="" method="POST">
+            <form id="formulario" action="processa.php" method="POST">
 
               <h1>Cadastre-se</h1>
               <fieldset>
-                <input type="text" id="text" name="text" placeholder="Nome completo">
+                <input type="text" id="text" name="text" placeholder="Nome completo"
+                 required maxlength="30" minlength="5">
+                <span></span>
             </fieldset>
               <fieldset>
-                <input type="email" id="email" name="email" placeholder="Email ou telefone">
+                <input type="email" id="email" name="email" placeholder="Email ou telefone"
+                 required maxlength="50" minlength="25">
+                <span></span>
             </fieldset>
             <fieldset>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                <input type="password" id="password" name="password" placeholder="Digite sua senha"
+                 required maxlength="8" minlength="4">
+                <span></span>
             </fieldset>
             <fieldset>
-                <input type="password" id="password" name="password" placeholder="Confirme sua senha">
+                <input type="password" id="password" name="password" placeholder="Confirme sua senha"
+                 required maxlength="8" minlength="4">
+                <span></span>
             </fieldset>
             <fieldset>
                 <button name="submit" type="submit" data-submit="...sending">Cadastrar</button>
             </fieldset>
 
-            <span>Ou cadastre-se com suas redes sociais</span>
+            <span class="span">Ou cadastre-se com suas redes sociais</span>
 
             <div class="fields">
                 <i class="fab fa-facebook-f"></i>
