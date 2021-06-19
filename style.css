@@ -8,25 +8,25 @@
 body {
     font-size: 12px;
     line-height: 30px;
+    -webkit-font-smoothing: antialiased;
     color: #777;
     background: rgba(12, 1, 22, 0.959);
     font-family: "Poppins", sans-serif;
 }
 
 
-.container {    
-    max-width: 400px;
-    width: 100%;
-}
-
 #formulario {
     width: 400px;
+    height: auto;
     background: #fdf9f9;
     padding: 25px 25px 50px 25px;
-    margin: 55px 400px;
+    margin: 0 auto;
+    margin-top: 50px;
     border: 1px solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 5px;
-    position: absolute;
+    position: relative;
 }
 
 
@@ -35,9 +35,10 @@ body {
         padding: 25px 25px 50px 25px;
         width: 100%;
         height: 100% !important; 
-        z-index: 1;
+        z-index: 1 !important;
         border-radius: 0;
         margin: 0;
+        position: absolute;
     }
 }
 
@@ -45,12 +46,14 @@ body {
     #formulario {
         padding: 25px 25px 50px 25px;
         width: 100%;
-        height: 100%;
-        z-index: 1;
+        height: 100% !important; 
+        z-index: 1 !important;
         border-radius: 0;
         margin: 0;
+        position: absolute;
     }
 }
+
 
 
 #formulario h1 {
@@ -88,7 +91,8 @@ input:valid + span::before {
 }
 
 input:valid, span:valid {
-    border-color: green
+    border-color: green;
+    transition: 2s;
 }
 
 
@@ -128,6 +132,16 @@ button {
     border-radius: 5px;
     border: 1px solid;
     font-size: 15px;
+}
+
+
+#checkbox {
+    width: 20px;
+    margin: 0px 5px 0 0
+}
+
+label {
+    font-size: 13px;
 }
 
 .circle {
